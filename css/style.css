@@ -17,7 +17,8 @@ h2{
 }
 .header__ul li{
     display: inline;
-    margin-right: 170px ;
+    margin-right: 85px ;
+    margin-left: 85px;
 }
 
 .headerMenu__link{
@@ -29,6 +30,9 @@ h2{
 .headerMenu__link:hover,
 .headerMenu__link:focus{
     color: black;
+}
+.Name{
+    text-align: center;
 }
 /* ----------------------AboutMe------------------------------ */
 .AboutMe__main{
@@ -81,8 +85,10 @@ border-radius: 0px;
     font-size: 25px;
     line-height: 22px;
     text-align: center;
+    color: black;
 }
 .portfolio__links:hover,
 .portfolio__links:focus{
     color: #828282;
 }
+/* Дописать Footer, сделать везде стили, отступы, настроить текст и все! */
