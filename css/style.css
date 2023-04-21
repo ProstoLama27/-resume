@@ -1,0 +1,88 @@
+*,
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h2{
+    text-align: center;
+    margin-bottom: 20px;
+}
+/* -------------------header------------------------ */
+.header__menu{
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+.header__ul li{
+    display: inline;
+    margin-right: 170px ;
+}
+
+.headerMenu__link{
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 22px;
+    color: #828282;
+}
+.headerMenu__link:hover,
+.headerMenu__link:focus{
+    color: black;
+}
+/* ----------------------AboutMe------------------------------ */
+.AboutMe__main{
+    height: 210px;
+    background-color: #F6F6F6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+}
+.AboutMe{
+    margin-top:100px ;
+}
+/* -----------------------Skills-------------------------------------- */
+.skill__Descriptions{
+    display: grid;
+    grid-template-columns: repeat(3, 200px);
+    justify-content: center;
+}
+/* нужно выровнять все по центру грида! */
+.skill__Icon{
+   width: 90px;
+   height: 90px;
+border-radius: 0px;
+}
+.skill__Icon__Figma{
+    width: 58px;
+    height: 89px;
+}
+/* -----------------------Portfolio-------------------------------------- */
+.portfolio__main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.portfolio__main div{
+    margin-bottom: 20px;
+}
+.portfolio__Img{
+    max-width: 936px;
+    height: 510px;
+}
+.portfolio__main__Elements{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.portfolio__links{
+    text-decoration: none;
+    font-size: 25px;
+    line-height: 22px;
+    text-align: center;
+}
+.portfolio__links:hover,
+.portfolio__links:focus{
+    color: #828282;
+}
