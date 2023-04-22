@@ -19,16 +19,13 @@ body{
 }
 /* -------------------header------------------------ */
 .header__menu{
+    max-width:800px;
+     border: 2px solid red;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
+    flex-wrap: nowrap;
     margin: 0 auto;
 }
-.header__ul li{
-    display: inline;
-    margin-right: 85px ;
-    margin-left: 85px;
-}
-
 .headerMenu__link{
     text-decoration: none;
     font-size: 18px;
@@ -154,33 +151,36 @@ body{
     color: #828282;
     background-color: rgb(37, 34, 34);
 }
-/* .footer__header{
-    position: absolute;
-    left: 44.89%;
-    right: 45.03%;
-    top: 89.33%;
-    bottom: 9.76%;
-    
-    font-size: 34px;
-    line-height: 42px;
-    text-align: center;
-}
-.footer__text{
-    position: absolute;
-    left: 40.86%;
-    right: 40.1%;
-    top: 90.66%;
-    bottom: 8.42%;
-    
-    font-size: 18px;
-    line-height: 22px;
-    text-align: center;
-}
-.footer__link{
-    position: absolute;
-} */
 /* Дописать Footer, сделать везде стили, отступы, настроить текст и все! */
 /* КАРТИНКИ НАЧИНАЮТ СЪЕЗЖАТЬ ПРИ 705 PX */
+@media (max-width:710px) {
+    .portfolio__Img{
+        max-width: 700px;
+        height: 300px;
+    }
+}
+@media(max-width:610px){
+    .AboutMe{
+        height: 260px;
+    }
+    .skill__Descriptions{
+        grid-template-columns: repeat(2, 150px);
+    }
+    .skill__Icon{
+       
+        margin-left: 30px;
+    }
+    .skill__Icon__Figma{
+        margin-left: 50px;
+    } 
+}
+@media (max-width:520px) {
+    .portfolio__Img{
+        max-width: 600px;
+        height: 200px;
+    }
+}
+
 /* @media (max-width:1000px){
     .header__ul li{
         margin-right: 40px ;
