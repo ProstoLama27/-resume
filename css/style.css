@@ -14,13 +14,12 @@ body{
 }
 .mainPart{
     max-width:800px;
-    /* border: 2px solid red;удалить! */
+    /* border: 2px solid red; */
     margin: 0 auto;
 }
 /* -------------------header------------------------ */
 .header__menu{
     max-width:800px;
-     border: 2px solid red;
     display: flex;
     justify-content: space-around;
     flex-wrap: nowrap;
@@ -30,6 +29,8 @@ body{
     text-decoration: none;
     font-size: 18px;
     line-height: 22px;
+    padding-top: 5px;
+    padding-bottom: 5px;
     color: #828282;
 }
 .headerMenu__link:hover,
@@ -90,6 +91,7 @@ body{
     font-size: 17px;
     line-height: 17px;
     padding-top: 10px;
+    padding-bottom: 20px;
 }
 /* -----------------------Portfolio-------------------------------------- */
 .Portfolio{
@@ -112,19 +114,21 @@ body{
     flex-direction: column;
     justify-content: center;
 }
-.portfolio__links{
-    text-decoration: none;
-    font-size: 25px;
+.portfolio__header{
     line-height: 22px;
     text-align: center;
     color: black;
 }
+.portfolio__main__Elements p{
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+}
 .portfolio__links:hover,
 .portfolio__links:focus{
-    color: #828282;
+    border: 1px solid gray;
 }
 /* -----------------------Footer-------------------------------------- */
-
 .footer__header{
     font-size: 34px;
     line-height: 42px;
@@ -151,8 +155,7 @@ body{
     color: #828282;
     background-color: rgb(37, 34, 34);
 }
-/* Дописать Footer, сделать везде стили, отступы, настроить текст и все! */
-/* КАРТИНКИ НАЧИНАЮТ СЪЕЗЖАТЬ ПРИ 705 PX */
+
 @media (max-width:710px) {
     .portfolio__Img{
         max-width: 700px;
@@ -180,39 +183,3 @@ body{
         height: 200px;
     }
 }
-
-/* @media (max-width:1000px){
-    .header__ul li{
-        margin-right: 40px ;
-        margin-left: 40px;
-    }
-}
-@media (max-width:900px){
-    .portfolio__Img{
-        max-width: 468px;
-        height: 255px;
-    }
-}
-@media (max-width:610px){
-     можно вставить скрипт на бургер меню 
-    .header__ul li{
-        display: none;
-    }
-    .myName{
-        top: 0.5%;
-    }
-    .myPost{
-        top: 12.5%;
-        left: 30%;
-        right: 20%;
-    }
-     AboutMe{
-        margin-top: 150px;
-        height: 500px;
-    } 
-    .skill__Descriptions{
-        grid-template-columns: repeat(2, 150px);
-       
-    }
-} */
-/* разобраться с позиционированием left и тд */
