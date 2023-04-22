@@ -34,17 +34,54 @@ h2{
 .Name{
     text-align: center;
 }
+.myName{
+    position: absolute;
+    left: 29%;
+    right: 74.08%;
+    top: 2.69%;
+    bottom: 94.82%;
+    font-size: 47.3392px;
+    line-height: 59px;
+}
+.myPost{
+    position: absolute;
+    /* left: 1%;
+    right: 1%; */
+    top: 7.85%;
+    /* bottom: 95.22%; */
+    font-size: 20px;
+    line-height: 40px;
+}
 /* ----------------------AboutMe------------------------------ */
-.AboutMe__main{
+.AboutMe{
+    margin-top:120px ;
+    width: 100%;
     height: 210px;
     background-color: #F6F6F6;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    /* justify-content: center; */
 }
-.AboutMe{
-    margin-top:100px ;
+.aboutMe__header{
+    position: absolute;
+left: 14.54%;
+right: 14.54%;
+top: 18.66%;
+bottom: 80.43%;
+
+font-size: 34px;
+line-height: 42px;
+text-align: center;
+}
+.aboutMe__FirstP{
+    position: absolute;
+    /* width: 700px;
+    height: 218px; */
+    left: 150px;
+    right: 150px;
+    top: 220px;
+    
+    
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
 }
 /* -----------------------Skills-------------------------------------- */
 .skill__Descriptions{
@@ -91,4 +128,66 @@ border-radius: 0px;
 .portfolio__links:focus{
     color: #828282;
 }
+/* -----------------------Footer-------------------------------------- */
+.footer__header{
+    position: absolute;
+    left: 44.89%;
+    right: 45.03%;
+    top: 89.33%;
+    bottom: 9.76%;
+    
+    /* font-family: 'Gilroy-Bold'; */
+    font-size: 34px;
+    line-height: 42px;
+    text-align: center;
+}
+.footer__text{
+    position: absolute;
+    left: 40.86%;
+    right: 40.1%;
+    top: 90.66%;
+    bottom: 8.42%;
+    
+    /* font-family: 'Gilroy-Medium'; */
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+}
+.footer__link{
+    position: absolute;
+}
 /* Дописать Footer, сделать везде стили, отступы, настроить текст и все! */
+@media (max-width:1000px){
+    .header__ul li{
+        margin-right: 40px ;
+        margin-left: 40px;
+    }
+}
+@media (max-width:900px){
+    .portfolio__Img{
+        max-width: 468px;
+        height: 255px;
+    }
+}
+@media (max-width:610px){
+    /* можно вставить скрипт на бургер меню */
+    .header__ul li{
+        display: none;
+    }
+    .myName{
+        top: 0.5%;
+    }
+    .myPost{
+        top: 12.5%;
+        left: 30%;
+        right: 20%;
+    }
+    .AboutMe{
+        margin-top: 150px;
+        height: 500px;
+    }
+    .skill__Descriptions{
+        grid-template-columns: repeat(2, 150px);
+       
+    }
+}
