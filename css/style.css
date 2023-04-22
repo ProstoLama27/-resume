@@ -164,7 +164,7 @@ body{
 }
 @media(max-width:610px){
     .AboutMe{
-        height: 260px;
+        height: 265px;
     }
     .skill__Descriptions{
         grid-template-columns: repeat(2, 150px);
